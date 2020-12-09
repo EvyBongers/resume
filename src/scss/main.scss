@@ -1,0 +1,135 @@
+@page {
+  margin: 0;
+  size: A4 portrait;
+}
+
+html,
+body {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  margin: 0 auto;
+  height: 297mm;
+  width: 210mm;
+}
+
+h1 {
+  display: block;
+}
+
+h2 {
+  margin: 24px 0 14px;
+  font-size: 18px;
+  display: block;
+  border-bottom: 1px solid #000000;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: initial;
+  margin: 1em 0 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: url("fonts/font-awesome/svgs/solid/caret-right.svg");
+  margin: 0;
+  padding-left: 1em;
+
+  > li {
+    line-height: 1em;
+    padding-left: 0.5em;
+
+    &::marker {
+      font-size: 1.8em;
+    }
+  }
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+}
+
+.left {
+  background-color: #efefef;
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+}
+
+[data-icon]:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: attr(data-icon);
+}
+
+[data-icon-after]:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: attr(data-icon-after);
+}
+
+[data-brand]:before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: attr(data-brand);
+}
+
+.photo {
+  border-radius: 50%;
+  height: 192px;
+  margin: 16px auto;
+  width: 192px;
+}
+
+.score {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  > div {
+    display: flex;
+    font-size: 13px;
+    line-height: 21px;
+    margin-left: auto;
+  }
+}
+
+#interests {
+  > ul {
+    columns: 2;
+  }
+}
+
+.personal-details {
+  > ul {
+    padding: 0;
+    list-style: none;
+
+    > li {
+      align-items: center;
+      display: flex;
+      padding-left: 0px;
+
+      &:before {
+        line-height: 2em;
+        margin-right: 0.5em;
+        width: 18px;
+        text-align: center;
+      }
+    }
+  }
+}
