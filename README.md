@@ -11,12 +11,12 @@ To install:
 ```
 # Arch
 pacman -S chromium npm
-npm install -g sass chrome-headless-render-pdf
+npm install
 
 # Ubuntu/Debian
 (cd /tmp; curl -LOJ https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb); \
 apt install npm /tmp/google-chrome-stable_current_amd64.deb
-npm install -g sass chrome-headless-render-pdf
+npm install
 ```
 
 # Rendering the resume

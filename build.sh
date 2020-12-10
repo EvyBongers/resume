@@ -1,4 +1,8 @@
 #!/bin/bash
+CWD="$(dirname "$(realpath "$0")")"
+PATH="${CWD}/node_modules/.bin:${PATH}"
+
+set -eux
 
 if ! command -v sass &>/dev/null; then
     echo "Sass not found!" >&2;
@@ -14,8 +18,6 @@ if ! command -v google-chrome &>/dev/null && ! command -v chromium &>/dev/null; 
     echo "Chrome not found!" >&2;
     exit 1
 fi
-
-CWD="$(dirname "$(realpath "$0")")"
 
 sass --no-source-map \
     --style=compressed \

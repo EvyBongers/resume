@@ -1,0 +1,9 @@
+{
+  "name": "resume",
+  "author": "Evy Bongers",
+  "homepage": "https://gitlab.com/EvyBongers/resume#readme",
+  "dependencies": {
+    "chrome-headless-render-pdf": "^1.8.5",
+    "sass": "^1.30.0"
+  }
+}
