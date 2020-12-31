@@ -108,10 +108,8 @@ ul {
   }
 }
 
-#interests {
-  > ul {
-    columns: 2;
-  }
+ul.multicolumn {
+  columns: var(--columns);
 }
 
 .personal-details {
